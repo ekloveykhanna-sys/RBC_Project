@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: Customer dimension table.
+
+  - name: dim_policies
+    description: Policy dimension enriched with customer details.
+
+  - name: fact_claims
+    description: Claim-level fact table.
+
+  - name: fact_transactions
+    description: Premium payment transaction fact table.
+
+  - name: mart_policy_performance
+    description: Aggregated policy performance mart for underwriting and claims analytics.

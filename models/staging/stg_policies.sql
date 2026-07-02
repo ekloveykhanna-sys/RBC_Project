@@ -1,0 +1,1 @@
+Select policy_id, customer_id, policy_number, policy_type, coverage_amount, annual_premium, strptime(policy_start_date, '%d/%m/%Y') as policy_start_date, policy_status from {{ ref('raw_policies_2hr') }}
